@@ -1,0 +1,258 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"titleNView": {
+						"searchInput": {
+							"align": "center",
+							"backgroundColor": "#F5F4F2",
+							"borderRadius": "4px",
+							"placeholder": "搜索",
+							"disabled": true,
+							"placeholderColor": "#6F6C67"
+						},
+						"buttons": [{
+							"color": "#FFFFFF",
+							"colorPressed": "#ea6783",
+							"float": "right",
+							"fontSize": "20px",
+							"fontSrc": "/static/font/iconfont.ttf",
+							"text": "\ue668"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/dynamic/dynamic",
+			"style": {
+				"navigationBarTitleText": "动态",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/msg/msg",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "消息",
+				"app-plus": {
+					"scrollIndicator":"none", // 隐藏滚动条
+					"titleNView": {
+						"buttons": [
+							// 左边
+							{
+								"color": "#FFFFFF",
+								"colorPressed": "#CCCCCC",
+								"float": "left",
+								"fontSize": "22px",
+								"fontSrc": "/static/font/iconfont.ttf",
+								"text": "\ue611"
+							},
+							// 右边
+							{
+								"color": "#FFFFFF",
+								"colorPressed": "#CCCCCC",
+								"float": "right",
+								"fontSize": "22px",
+								"fontSrc": "/static/font/iconfont.ttf",
+								"text": "\ue649"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+		    "path" : "pages/ads/ads",
+		    "style": {
+		    	"navigationBarTitleText": "uni-app",
+				"app-plus": {
+					"safearea": {  
+					    "bottom": {  
+					        "offset": "none"  
+					    }  
+					}
+				}
+		    } 
+		}
+        ,{
+            "path" : "pages/search/search",
+            "style" :                                                                                    
+            {
+                "enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": {
+						"searchInput": {
+							"align": "center",
+							"backgroundColor": "#F5F4F2",
+							"borderRadius": "4px",
+							"placeholder": "搜索帖子",
+							"placeholderColor": "#6F6C67"
+						},
+						"buttons": [{
+							"color": "#FFFFFF",
+							"colorPressed": "#ea6783",
+							"float": "right",
+							"fontSize": "14px",
+							"text": "搜索"
+						}]
+					}
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/write/write",
+            "style" :                                                                                    
+            {
+                "navigationStyle":"custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/topic-detail/topic-detail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "话题详情",
+                "app-plus": {
+					"scrollIndicator": "none", // 隐藏滚动条
+					"titleNView": {
+						"type": "transparent",
+						"buttons": [{
+							"type": "menu"
+						}]
+					}
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/friend-list/friend-list",
+            "style" :                                                                                    
+            {
+                "app-plus": {
+					"animationType": "slide-in-left", // 进场动画
+					"scrollIndicator": "none", // 隐藏滚动条
+					"bounce": "none", // 关闭反弹效果
+					"titleNView": {
+						"autoBackButton": false,
+						// 搜索框配置
+						"searchInput": {
+							"align": "left",
+							"backgroundColor": "#F7F7F7",
+							"borderRadius": "4px",
+							"placeholder": "搜索好友",
+							"placeholderColor": "#CCCCCC",
+							"disabled": false
+						},
+						// 配置按钮
+						"buttons": [
+							// 右边
+							{
+								"color": "#FFFFFF",
+								"colorPressed": "#BBBBBB",
+								"float": "right",
+								"fontSize": "16px",
+								"text": "取消"
+							}
+						]
+					}
+				}
+            }  
+        },
+		{
+		    "path" : "pages/friend-chat/friend-chat",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "聊天页",
+		        "app-plus": {
+					"titleNView": {
+						"buttons": [
+							// 右边
+							{
+								"color": "#FFFFFF",
+								"colorPressed": "#BBBBBB",
+								"float": "right",
+								"fontSize": "22px",
+								"fontSrc": "/static/font/iconfont.ttf",
+								"text": "\ue628"
+							}
+						]
+					}
+				}
+		    }	    
+		},
+		{
+		    "path" : "pages/article-detail/article-detail",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "文章详情",
+		        "app-plus": {
+					"scrollIndicator": "none",
+					"bounce": "none",
+					"titleNView": {
+						"buttons": [{
+							"type": "menu"
+						}]
+					}
+				}
+		    }
+		}
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "我的应用",
+		"navigationBarBackgroundColor": "#5c8396",
+		"backgroundColor": "#F8F8F8",
+		"pageOrientation": "portrait", //横屏配置，全局屏幕旋转设置(仅 APP/微信/QQ小程序)，支持 auto / portrait / landscape
+		"rpxCalcMaxDeviceWidth": 960,
+		"rpxCalcBaseDeviceWidth": 375,
+		"rpxCalcIncludeWidth": 750
+	},
+	"tabBar": {
+		"color": "#333333",
+		"borderStyle": "black",
+		"selectedColor": "#5c8396",
+		"backgroundColor": "#FFFFFF",
+		"height": "50px",
+		"fontSize": "14px",
+		"iconWidth": "20px",
+		"spacing": "3px",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/tabbar/index.png",
+				"selectedIconPath": "static/tabbar/index-active.png"
+			},
+			{
+				"pagePath": "pages/dynamic/dynamic",
+				"text": "动态",
+				"iconPath": "static/tabbar/dynamic.png",
+				"selectedIconPath": "static/tabbar/dynamic-active.png"
+			},
+			{
+				"pagePath": "pages/msg/msg",
+				"text": "消息",
+				"iconPath": "static/tabbar/msg.png",
+				"selectedIconPath": "static/tabbar/msg-active.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "static/tabbar/my.png",
+				"selectedIconPath": "static/tabbar/my-active.png"
+			}
+		]
+	}
+}
